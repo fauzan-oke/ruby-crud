@@ -21,4 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* rails db:migrate
+
+* rails s
+
+* http://127.0.0.1:3000/employees
+* http://127.0.0.1:3000/departements
+* http://127.0.0.1:3000/spendings
