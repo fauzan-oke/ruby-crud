@@ -1,0 +1,30 @@
+
+
+
+<div class="container">
+
+
+<h2>Detail</h2>
+  <p><%= link_to "Back to spendings", spendings_path %></p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>
+      <%= render @spending %>
+      </td>
+        <td>
+        <%= link_to "Edit this spending", edit_spending_path(@spending) %> |
+        <div class="destroy-button">
+        <%= button_to "Destroy this spending", @spending, method: :delete %>
+      </div>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+
+  </div>

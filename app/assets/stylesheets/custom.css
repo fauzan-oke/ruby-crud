@@ -1,0 +1,72 @@
+/* app/assets/stylesheets/custom.css */
+
+/* Style for the table */
+table.departements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style for the table header */
+table.departements-table th {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for the table rows */
+table.departements-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for alternate table rows */
+table.departements-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for the "Show this departement" link */
+a.departement-link {
+    color: blue;
+    text-decoration: none;
+}
+
+a.departement-link:hover {
+    text-decoration: underline;
+}
+
+/* app/assets/stylesheets/custom.css */
+
+/* Style for the notice paragraph */
+p.notice {
+    color: green;
+}
+
+/* Style for the links */
+a.departement-link {
+    color: blue;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a.departement-link:hover {
+    text-decoration: underline;
+}
+
+/* Style for the destroy button */
+div.destroy-button {
+    margin-top: 10px;
+}
+
+div.destroy-button input[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+div.destroy-button input[type="submit"]:hover {
+    background-color: #c82333;
+}

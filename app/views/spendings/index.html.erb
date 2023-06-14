@@ -1,0 +1,32 @@
+
+
+
+
+
+
+<div class="container">
+<h1>Spendings</h1>
+  <p><%= link_to "New spending", new_spending_path %></p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>EmployeeID</th>
+        <th>Date</th>
+        <th>Value</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @spendings.each do |spending| %>
+      <tr>
+        <td><%= spending.employeeID %></td>
+        <td><%= spending.date %></td>
+        <td><%= spending.value %></td>
+        <td>
+        <%= link_to "Show this spending", spending %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</div>

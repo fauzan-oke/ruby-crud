@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Departements</h2>
+  <p><%= link_to "New departement", new_departement_path %>
+</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @departements.each do |departement| %>
+      <tr>
+        <td><%= departement.name %></td>
+        <td>
+          <%= link_to "Lihat detail", departement, class: "departement-link" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</div>

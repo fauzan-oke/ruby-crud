@@ -1,0 +1,3292 @@
+Started GET "/" for 127.0.0.1 at 2023-06-14 00:09:46 +0700
+  
+ActiveRecord::NoDatabaseError (We could not find your database: myapp_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:47:in `rescue in new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.5) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-14 00:10:11 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 733)
+Completed 200 OK in 15ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 7481)
+
+
+  [1m[35m (26.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4314989761323837330', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateEmployees (20230613171107)
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE `employees` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `departementID` int, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (20.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230613171107')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-06-13 17:11:40.654740', '2023-06-13 17:11:40.654740')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4314989761323837330')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4314989761323837330', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateDepartements (20230613171600)
+  [1m[35m (34.2ms)[0m  [1m[35mCREATE TABLE `departements` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230613171600')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSpendings (20230613171713)
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE `spendings` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `employeeID` int, `date` date, `value` int, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230613171713')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('4314989761323837330')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2023-06-14 08:35:53 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 733)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 7101)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 08:40:23 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 733)
+Completed 200 OK in 12ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 7101)
+
+
+Started GET "/home" for 127.0.0.1 at 2023-06-14 08:40:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 08:40:59 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.6ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 235)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 52.0ms | Allocations: 18554)
+  Rendered layout layouts/application.html.erb (Duration: 1171.9ms | Allocations: 91144)
+Completed 200 OK in 1178ms (Views: 1133.6ms | ActiveRecord: 39.9ms | Allocations: 92952)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 08:41:06 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.3ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1850)
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 1.3ms | Allocations: 4610)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 08:43:38 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 570)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1568)
+Completed 200 OK in 15ms (Views: 6.2ms | ActiveRecord: 1.0ms | Allocations: 2344)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 08:43:40 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.8ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 22.7ms | Allocations: 5960)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 26.0ms | Allocations: 6324)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 7323)
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 1.8ms | Allocations: 8170)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2023-06-14 08:43:47 +0700
+Processing by EmployeesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"name"=>"budis", "departementID"=>"1"}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (12.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+  [1m[36mEmployee Update (12.2ms)[0m  [1m[33mUPDATE `employees` SET `employees`.`name` = 'budis', `employees`.`updated_at` = '2023-06-14 01:43:47.960735' WHERE `employees`.`id` = 1[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/employees/1
+Completed 302 Found in 47ms (ActiveRecord: 37.1ms | Allocations: 3878)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 08:43:47 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (18.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1589)
+Completed 200 OK in 23ms (Views: 2.8ms | ActiveRecord: 18.4ms | Allocations: 2367)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 08:43:50 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (14.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 10.2ms | Allocations: 1059)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1180)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 2178)
+Completed 200 OK in 41ms (Views: 18.0ms | ActiveRecord: 14.7ms | Allocations: 2954)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2023-06-14 08:43:52 +0700
+Processing by EmployeesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"name"=>"budi", "departementID"=>"1"}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (5.5ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+  [1m[36mEmployee Update (2.0ms)[0m  [1m[33mUPDATE `employees` SET `employees`.`name` = 'budi', `employees`.`updated_at` = '2023-06-14 01:43:52.765731' WHERE `employees`.`id` = 1[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/employees/1
+Completed 302 Found in 21ms (ActiveRecord: 8.5ms | Allocations: 2732)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 08:43:52 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 594)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1592)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 2368)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 08:43:59 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (4.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2039)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3058)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 4.4ms | Allocations: 3374)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 08:47:54 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 733)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 7101)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 08:47:59 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.8ms | Allocations: 237)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 18743)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 44359)
+Completed 200 OK in 65ms (Views: 52.6ms | ActiveRecord: 8.8ms | Allocations: 46175)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 09:41:27 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/arkademibackend/.rvm/gems/ruby-3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 733)
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 7101)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:41:34 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 237)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 18747)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 44790)
+Completed 200 OK in 60ms (Views: 48.9ms | ActiveRecord: 7.9ms | Allocations: 46606)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:47 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 245)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 19026)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 48698)
+Completed 200 OK in 50ms (Views: 38.1ms | ActiveRecord: 6.0ms | Allocations: 55877)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:48 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2050)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3718)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 1.7ms | Allocations: 4044)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:49 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2043)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3711)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.8ms | Allocations: 4035)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2051)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3719)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 4043)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2043)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3710)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.8ms | Allocations: 4026)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2039)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3706)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 4022)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2043)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3710)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms | Allocations: 4026)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2052)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3719)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 1.0ms | Allocations: 4035)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:51 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3712)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 4028)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:51 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 30.2ms | Allocations: 2055)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 3732)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 4049)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:48:51 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2051)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3718)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 4034)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:50:30 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 245)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 28.3ms | Allocations: 19026)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 48628)
+Completed 200 OK in 62ms (Views: 36.5ms | ActiveRecord: 19.0ms | Allocations: 55807)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:50:32 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.8ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2046)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3716)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.8ms | Allocations: 4042)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:50:33 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2057)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3727)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.2ms | Allocations: 4051)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 09:50:36 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 826)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2475)
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 1.2ms | Allocations: 5236)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:50:38 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2047)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3716)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 4032)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:51:28 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (10.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.4ms | Allocations: 245)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 19020)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 40897)
+Completed 200 OK in 43ms (Views: 31.8ms | ActiveRecord: 4.8ms | Allocations: 48077)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 09:51:29 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2048)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3718)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.7ms | Allocations: 4044)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:51:38 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:6
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3577)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5304)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 4.1ms | Allocations: 6612)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:52:12 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:6
+  Rendered departements/_departement.html.erb (Duration: 0.9ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 2229)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 4200)
+Completed 200 OK in 26ms (Views: 22.2ms | ActiveRecord: 1.3ms | Allocations: 5326)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:52:13 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (15.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:6
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 1559)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 3228)
+Completed 200 OK in 29ms (Views: 11.7ms | ActiveRecord: 15.5ms | Allocations: 3545)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:53:08 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:6
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2233)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4203)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.7ms | Allocations: 5321)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:53:21 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (57.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:6
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/index.html.erb within layouts/application (Duration: 85.2ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 89.4ms | Allocations: 4205)
+Completed 200 OK in 98ms (Views: 35.4ms | ActiveRecord: 57.3ms | Allocations: 5332)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:53:40 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:8
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1718)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3688)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.1ms | Allocations: 4806)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:53:51 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.8ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:8
+  Rendered departements/_departement.html.erb (Duration: 0.7ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered departements/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1725)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3695)
+Completed 200 OK in 29ms (Views: 15.1ms | ActiveRecord: 0.8ms | Allocations: 4813)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:55:25 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (2.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:11
+  Rendered departements/index.html.erb within layouts/application (Duration: 52.3ms | Allocations: 7373)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 7445)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 2.2ms | Allocations: 8545)
+
+
+  
+ActionView::Template::Error (undefined method `description' for #<Departement id: 1, name: "information technology", created_at: "2023-06-14 12:00:00.000000000 +0000", updated_at: "2023-06-14 12:00:00.000000000 +0000">
+Did you mean?  decrypt):
+    11:       <% @departements.each do |departement| %>
+    12:         <tr>
+    13:           <td><%= departement.name %></td>
+    14:           <td><%= departement.description %></td>
+    15:           <td>
+    16:             <%= link_to "Show this departement", departement, class: "departement-link" %>
+    17:           </td>
+  
+app/views/departements/index.html.erb:14
+app/views/departements/index.html.erb:11
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:55:26 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (10.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:11
+  Rendered departements/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 3403)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 3474)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 10.1ms | Allocations: 3758)
+
+
+  
+ActionView::Template::Error (undefined method `description' for #<Departement id: 1, name: "information technology", created_at: "2023-06-14 12:00:00.000000000 +0000", updated_at: "2023-06-14 12:00:00.000000000 +0000">
+Did you mean?  decrypt):
+    11:       <% @departements.each do |departement| %>
+    12:         <tr>
+    13:           <td><%= departement.name %></td>
+    14:           <td><%= departement.description %></td>
+    15:           <td>
+    16:             <%= link_to "Show this departement", departement, class: "departement-link" %>
+    17:           </td>
+  
+app/views/departements/index.html.erb:14
+app/views/departements/index.html.erb:11
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:55:48 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 8955)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 1.0ms | Allocations: 10072)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:56:12 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.4ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 992)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 3152)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 1.4ms | Allocations: 4270)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:56:13 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (5.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1079)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2727)
+Completed 200 OK in 37ms (Views: 5.0ms | ActiveRecord: 5.9ms | Allocations: 7862)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:56:19 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2574)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2890)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:56:31 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 589)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2237)
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 3013)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:57:02 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2235)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.9ms | Allocations: 3010)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:58:22 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.7ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 7246)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 1.3ms | Allocations: 8822)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:58:23 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 609)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2257)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.7ms | Allocations: 3033)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:58:36 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.4ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 968)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2810)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 3207)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 09:58:38 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 603)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2251)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.7ms | Allocations: 3026)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 09:58:39 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2566)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.0ms | Allocations: 2882)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:11:55 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (21.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:10
+  Rendered departements/index.html.erb within layouts/application (Duration: 102.7ms | Allocations: 845)
+  Rendered layout layouts/application.html.erb (Duration: 111.5ms | Allocations: 2687)
+Completed 200 OK in 131ms (Views: 118.7ms | ActiveRecord: 38.1ms | Allocations: 3001)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:16:12 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (35.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 49.5ms | Allocations: 1007)
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 3157)
+Completed 200 OK in 71ms (Views: 32.0ms | ActiveRecord: 35.3ms | Allocations: 4274)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:16:19 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (6.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.9ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1103)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2751)
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 6.3ms | Allocations: 3608)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:19:20 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (4.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1754)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1826)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 4.5ms | Allocations: 3370)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13:       </tr>
+    14:     </thead>
+    15:     <tbody>
+    16:     <% @departements.each do |departement| %>
+    17:       <tr>
+    18:         <td><%= departement.id %></td>      
+    19:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:16
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:19:22 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1411)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1482)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.3ms | Allocations: 2225)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13:       </tr>
+    14:     </thead>
+    15:     <tbody>
+    16:     <% @departements.each do |departement| %>
+    17:       <tr>
+    18:         <td><%= departement.id %></td>      
+    19:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:16
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:20:04 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.2ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2091)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2163)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms | Allocations: 3706)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14:       </tr>
+    15:     </thead>
+    16:     <tbody>
+    17:     <% @departements.each do |departement| %>
+    18:       <tr>
+    19:         <td><%= departement.id %></td>      
+    20:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:17
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:20:05 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (17.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1490)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1561)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 17.9ms | Allocations: 2304)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14:       </tr>
+    15:     </thead>
+    16:     <tbody>
+    17:     <% @departements.each do |departement| %>
+    18:       <tr>
+    19:         <td><%= departement.id %></td>      
+    20:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:17
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:20:06 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1490)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1561)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 2303)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14:       </tr>
+    15:     </thead>
+    16:     <tbody>
+    17:     <% @departements.each do |departement| %>
+    18:       <tr>
+    19:         <td><%= departement.id %></td>      
+    20:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:17
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:20:35 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (14.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.5ms | Allocations: 175)
+  Rendered departements/_departement.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered departements/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2812)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2884)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 14.0ms | Allocations: 4427)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    25:       </tr>
+    26:     </thead>
+    27:     <tbody>
+    28:     <% @departements.each do |departement| %>
+    29:       <tr>
+    30:         <td><%= departement.id %></td>      
+    31:         <td><%= departement.name %></td>
+  
+app/views/departements/show.html.erb:28
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:20:45 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (8.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.9ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1127)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3090)
+Completed 200 OK in 46ms (Views: 15.3ms | ActiveRecord: 8.0ms | Allocations: 4666)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:21:12 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (14.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.9ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1129)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3083)
+Completed 200 OK in 41ms (Views: 12.2ms | ActiveRecord: 14.6ms | Allocations: 4660)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:21:15 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (6.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 979)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 2825)
+Completed 200 OK in 31ms (Views: 22.8ms | ActiveRecord: 6.5ms | Allocations: 3223)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:21:17 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.8ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 625)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2273)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.8ms | Allocations: 3048)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:22:07 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.8ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.7ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3082)
+Completed 200 OK in 19ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 4658)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:23:58 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.8ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1122)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3076)
+Completed 200 OK in 28ms (Views: 20.8ms | ActiveRecord: 1.1ms | Allocations: 4654)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:24:10 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (13.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 982)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 2842)
+Completed 200 OK in 35ms (Views: 19.9ms | ActiveRecord: 13.6ms | Allocations: 3240)
+
+
+Started GET "/departements/2" for 127.0.0.1 at 2023-06-14 10:24:11 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDepartement Load (0.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2234)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 3009)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:24:14 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.3ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2584)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 1.3ms | Allocations: 2900)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:24:27 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2240)
+Completed 200 OK in 41ms (Views: 10.3ms | ActiveRecord: 1.0ms | Allocations: 3015)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:24:36 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2580)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.5ms | Allocations: 2896)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:24:40 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (31.6ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:6
+  Rendered employees/_employee.html.erb (Duration: 0.9ms | Allocations: 207)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/_employee.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered employees/index.html.erb within layouts/application (Duration: 47.8ms | Allocations: 2595)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4320)
+Completed 200 OK in 56ms (Views: 22.4ms | ActiveRecord: 31.6ms | Allocations: 5188)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:27:50 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.3ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 4208)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 4280)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.3ms | Allocations: 5373)
+
+
+  
+ActionView::Template::Error (undefined method `DepartementID' for #<Employee id: 1, name: "budi", departementID: 1, created_at: "2023-06-14 12:00:00.000000000 +0000", updated_at: "2023-06-14 01:43:52.765731000 +0000">
+Did you mean?  departementID
+               departementID=
+               departementID?
+               departementID_was):
+    17:     <% @employees.each do |employee| %>
+    18:       <tr>
+    19:         <td><%= employee.name %></td>
+    20:         <td><%= employee.DepartementID %></td>
+    21:         <td>
+    22:         <%= link_to "Show this employee", employee %>
+    23:         </td>
+  
+app/views/employees/index.html.erb:20
+app/views/employees/index.html.erb:17
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:28:07 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (2.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 26.1ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 3565)
+Completed 200 OK in 50ms (Views: 43.6ms | ActiveRecord: 2.7ms | Allocations: 4683)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-06-14 10:28:14 +0700
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 27.2ms | Allocations: 5782)
+  Rendered employees/new.html.erb within layouts/application (Duration: 30.8ms | Allocations: 6096)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7752)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 8152)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:28:17 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (12.3ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered employees/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1080)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2728)
+Completed 200 OK in 25ms (Views: 5.6ms | ActiveRecord: 12.3ms | Allocations: 4190)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:28:27 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:14
+  Rendered departements/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1001)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 2917)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 1.2ms | Allocations: 3783)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:29:18 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3195)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 1.1ms | Allocations: 4313)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:29:19 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.4ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1102)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2750)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.5ms | Allocations: 3607)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:29:21 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2597)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.6ms | Allocations: 2913)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:29:21 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 5.4ms | Allocations: 1177)
+  Rendered departements/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3143)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3525)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:29:48 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2611)
+Completed 200 OK in 28ms (Views: 14.8ms | ActiveRecord: 0.9ms | Allocations: 2927)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:29:52 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (8.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2243)
+Completed 200 OK in 20ms (Views: 7.3ms | ActiveRecord: 8.5ms | Allocations: 3019)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:29:54 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2605)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 2921)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:29:54 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 1.6ms | Allocations: 768)
+  Rendered departements/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 853)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2509)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2826)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:30:12 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 11.6ms | Allocations: 1156)
+  Rendered departements/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1485)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 3447)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 4543)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:30:26 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1022)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 2868)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 1.2ms | Allocations: 3266)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:30:29 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.9ms | Allocations: 172)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1086)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2734)
+Completed 200 OK in 19ms (Views: 8.5ms | ActiveRecord: 1.2ms | Allocations: 3590)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:30:30 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2615)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 2931)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:30:31 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 3.6ms | Allocations: 762)
+  Rendered departements/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 847)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2503)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2820)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:30:50 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 23.3ms | Allocations: 1139)
+  Rendered departements/new.html.erb within layouts/application (Duration: 28.1ms | Allocations: 1498)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 3460)
+Completed 200 OK in 78ms (Views: 64.9ms | ActiveRecord: 0.0ms | Allocations: 4553)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:30:53 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (2.1ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1022)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2858)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 2.1ms | Allocations: 3256)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 10:30:54 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 1.7ms | Allocations: 749)
+  Rendered departements/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 847)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2503)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2820)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:30:56 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.8ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2609)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 2925)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:30:58 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.8ms | Allocations: 172)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1091)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2739)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 1.2ms | Allocations: 3595)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:31:00 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2617)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.6ms | Allocations: 2933)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:31:03 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (13.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 3300)
+Completed 200 OK in 28ms (Views: 12.7ms | ActiveRecord: 13.4ms | Allocations: 4167)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:31:10 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.3ms | Allocations: 207)
+  Rendered employees/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1087)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2735)
+Completed 200 OK in 27ms (Views: 19.7ms | ActiveRecord: 1.0ms | Allocations: 3593)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:31:26 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.2ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 594)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2251)
+Completed 200 OK in 23ms (Views: 14.3ms | ActiveRecord: 1.2ms | Allocations: 3027)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:31:27 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 2.3ms | Allocations: 854)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1158)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2806)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.9ms | Allocations: 3638)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:32:08 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.0ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 4.1ms | Allocations: 1201)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1663)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3617)
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 1.0ms | Allocations: 5171)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:32:24 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (3.4ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 4.9ms | Allocations: 1199)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1614)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3573)
+Completed 200 OK in 52ms (Views: 13.6ms | ActiveRecord: 3.4ms | Allocations: 5125)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:32:28 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (12.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 3.7ms | Allocations: 1208)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1629)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3583)
+Completed 200 OK in 54ms (Views: 12.6ms | ActiveRecord: 12.7ms | Allocations: 5135)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:32:33 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.4ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.3ms | Allocations: 172)
+  Rendered departements/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1086)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2734)
+Completed 200 OK in 21ms (Views: 11.3ms | ActiveRecord: 1.4ms | Allocations: 3591)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 10:32:47 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (1.9ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered departements/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1132)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3086)
+Completed 200 OK in 79ms (Views: 16.5ms | ActiveRecord: 1.9ms | Allocations: 4662)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:32:49 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.8ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 2.8ms | Allocations: 1192)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1579)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3233)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.8ms | Allocations: 4066)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 10:32:50 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (4.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 2.8ms | Allocations: 826)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 960)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2617)
+Completed 200 OK in 16ms (Views: 9.3ms | ActiveRecord: 4.5ms | Allocations: 3393)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:32:52 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1022)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2882)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.7ms | Allocations: 3279)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:32:57 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (11.5ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 3292)
+Completed 200 OK in 26ms (Views: 13.3ms | ActiveRecord: 11.5ms | Allocations: 4158)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:33:02 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.1ms | Allocations: 207)
+  Rendered employees/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1088)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2736)
+Completed 200 OK in 18ms (Views: 10.8ms | ActiveRecord: 0.7ms | Allocations: 3594)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-06-14 10:33:07 +0700
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 7.1ms | Allocations: 1406)
+  Rendered employees/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1713)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3369)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 3743)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:33:10 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 588)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2236)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 1.2ms | Allocations: 3012)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:34:56 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.0ms | Allocations: 207)
+  Rendered employees/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1144)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3098)
+Completed 200 OK in 36ms (Views: 14.6ms | ActiveRecord: 1.0ms | Allocations: 4678)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:35:03 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1370)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3216)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 3614)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:35:05 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (11.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2233)
+Completed 200 OK in 23ms (Views: 7.3ms | ActiveRecord: 11.7ms | Allocations: 3009)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 10:35:06 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (3.1ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 4.2ms | Allocations: 1498)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1860)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3508)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 3.1ms | Allocations: 4341)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 10:36:12 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 3.9ms | Allocations: 1478)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1900)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3854)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 1.0ms | Allocations: 5406)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:36:14 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.2ms | Allocations: 204)
+  Rendered employees/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1101)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2749)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.7ms | Allocations: 3607)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:36:16 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (2.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1370)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3214)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 2.4ms | Allocations: 3612)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:36:18 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2223)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 2999)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 10:36:18 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 2.8ms | Allocations: 1062)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2846)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 1.7ms | Allocations: 3622)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:36:20 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered employees/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 579)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2232)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 2.2ms | Allocations: 3008)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:36:21 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2938)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 3254)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-06-14 10:36:22 +0700
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 2.8ms | Allocations: 992)
+  Rendered employees/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1241)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2897)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3271)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-06-14 10:37:09 +0700
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 13.1ms | Allocations: 1402)
+  Rendered employees/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 1769)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 3732)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 4829)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:37:10 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1373)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3232)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 3630)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 10:37:18 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (23.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:6
+  Rendered spendings/_spending.html.erb (Duration: 0.6ms | Allocations: 259)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/index.html.erb within layouts/application (Duration: 72.3ms | Allocations: 18582)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 20317)
+Completed 200 OK in 77ms (Views: 18.5ms | ActiveRecord: 56.9ms | Allocations: 21616)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:38:38 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (13.1ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 2923)
+Completed 200 OK in 31ms (Views: 16.1ms | ActiveRecord: 13.1ms | Allocations: 3241)
+
+
+Started GET "/emo" for 127.0.0.1 at 2023-06-14 10:38:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/emo"):
+  
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:38:46 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.9ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1081)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2925)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.9ms | Allocations: 3242)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 10:38:49 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.4ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.5ms | Allocations: 204)
+  Rendered employees/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2756)
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 1.4ms | Allocations: 3613)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 10:38:51 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (11.7ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2945)
+Completed 200 OK in 21ms (Views: 8.2ms | ActiveRecord: 11.7ms | Allocations: 3261)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 10:38:57 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (0.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2938)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.6ms | Allocations: 3805)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 10:39:09 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:6
+  Rendered spendings/_spending.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/_spending.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered spendings/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3471)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5142)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.8ms | Allocations: 5459)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 10:41:14 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (1.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2013)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 4169)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 1.5ms | Allocations: 5289)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:41:22 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.0ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 1.1ms | Allocations: 239)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1123)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 2771)
+Completed 200 OK in 33ms (Views: 20.5ms | ActiveRecord: 1.0ms | Allocations: 4236)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:42:26 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (5.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 4.7ms | Allocations: 239)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3131)
+Completed 200 OK in 50ms (Views: 24.6ms | ActiveRecord: 5.5ms | Allocations: 4709)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:42:53 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.9ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.6ms | Allocations: 239)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1180)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3138)
+Completed 200 OK in 44ms (Views: 22.6ms | ActiveRecord: 0.9ms | Allocations: 4718)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 10:42:59 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.4ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1988)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3848)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 4247)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:43:01 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.0ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2226)
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 1.0ms | Allocations: 3003)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:43:02 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.4ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 27.4ms | Allocations: 6671)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 30.0ms | Allocations: 6973)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 7044)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.4ms | Allocations: 7851)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:55:30 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (11.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 7.3ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2854)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 26.0ms | Allocations: 3714)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:55:32 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (11.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 9.6ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2854)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 11.6ms | Allocations: 3598)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:55:35 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (2.3ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 7.2ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2854)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.3ms | Allocations: 3598)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:56:47 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (24.2ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 5.7ms | Allocations: 3185)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3489)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3561)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 24.2ms | Allocations: 5084)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:56:50 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 6.0ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2854)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 3599)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:14 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 8.3ms | Allocations: 3185)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 16.7ms | Allocations: 3489)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 3561)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 1.6ms | Allocations: 5084)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:15 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.1ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 5.4ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2854)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.1ms | Allocations: 3599)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:17 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.8ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2854)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 3598)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:31 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (12.2ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 6.2ms | Allocations: 3185)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3488)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3560)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 12.2ms | Allocations: 5080)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:32 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 3.9ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2854)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms | Allocations: 3599)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:33 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 7.1ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2854)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 3598)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:46 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 8.1ms | Allocations: 3185)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3488)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3560)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.5ms | Allocations: 5080)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:57:47 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.1ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.8ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2783)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2854)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms | Allocations: 3599)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:58:01 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.4ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1252)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 26988)
+Completed 200 OK in 64ms (Views: 30.7ms | ActiveRecord: 21.1ms | Allocations: 52849)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 10:58:06 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.9ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3137)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4986)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.9ms | Allocations: 5396)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:58:08 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2123)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.6ms | Allocations: 2913)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:58:36 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.1ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 1.0ms | Allocations: 255)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 19.5ms | Allocations: 4391)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 6345)
+Completed 200 OK in 55ms (Views: 44.9ms | ActiveRecord: 1.1ms | Allocations: 7923)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:58:41 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 19.8ms | Allocations: 5243)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 22.7ms | Allocations: 5554)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 5625)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.6ms | Allocations: 6444)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 10:59:05 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 1.5ms | Allocations: 239)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1183)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3147)
+Completed 200 OK in 52ms (Views: 12.6ms | ActiveRecord: 1.7ms | Allocations: 4725)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 10:59:07 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.0ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 8.2ms | Allocations: 3177)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3475)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3547)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 4363)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:06:38 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (13.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 9.9ms | Allocations: 2726)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2784)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2855)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 29.6ms | Allocations: 3716)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:07:04 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (4.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 3086)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 4944)
+Completed 200 OK in 35ms (Views: 26.4ms | ActiveRecord: 4.8ms | Allocations: 5342)
+
+
+Started GET "/spendings/new" for 127.0.0.1 at 2023-06-14 11:07:07 +0700
+Processing by SpendingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/new.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 3.2ms | Allocations: 1358)
+  Rendered spendings/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1608)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3264)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3663)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:07:08 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2767)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4607)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.7ms | Allocations: 4923)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:07:10 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 577)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2225)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.6ms | Allocations: 3002)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:07:19 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (2.3ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 6.3ms | Allocations: 2727)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2785)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2857)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.3ms | Allocations: 3615)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:07:27 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.9ms | Allocations: 2727)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2785)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2856)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms | Allocations: 3600)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "4-Mar-20":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:10:54 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 11ms (ActiveRecord: 1.7ms | Allocations: 927)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:10:54 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 8ms (ActiveRecord: 1.7ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:10:55 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:12:47 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (2.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 18ms (ActiveRecord: 2.6ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:12:49 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.7ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.7ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:12:54 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.8ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:12:59 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (26.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+Completed 404 Not Found in 31ms (ActiveRecord: 26.6ms | Allocations: 919)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Spending with 'id'=1):
+  
+app/controllers/spendings_controller.rb:63:in `set_spending'
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:13:34 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.6ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.6ms | Allocations: 21)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 2243)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.6ms | Allocations: 3020)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:13:37 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (4.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 6.2ms | Allocations: 2725)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2784)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2855)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.8ms | Allocations: 3600)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for "2020-Maret-04":String
+Did you mean?  strip):
+    18: 
+    19:   <div>
+    20:     <%= form.label :date, style: "display: block" %>
+    21:     <%= form.date_field :date %>
+    22:   </div>
+    23: 
+    24:   <div>
+  
+app/views/spendings/_form.html.erb:21
+app/views/spendings/_form.html.erb:1
+app/views/spendings/edit.html.erb:3
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:14:08 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.3ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 5.7ms | Allocations: 1527)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1904)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3868)
+Completed 200 OK in 26ms (Views: 18.1ms | ActiveRecord: 1.3ms | Allocations: 5420)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:14:12 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.4ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2842)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 3240)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:14:13 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.5ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 1.1ms | Allocations: 236)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1136)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2784)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 0.5ms | Allocations: 3642)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:14:17 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (19.2ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 3.8ms | Allocations: 1071)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2840)
+Completed 200 OK in 36ms (Views: 10.8ms | ActiveRecord: 19.2ms | Allocations: 3617)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:14:53 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (1.3ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1831)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3691)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 1.3ms | Allocations: 4007)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:14:58 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.9ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 589)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2237)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.9ms | Allocations: 3014)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:14:59 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.1ms | Allocations: 1065)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1186)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2834)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 1.8ms | Allocations: 3611)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:15:10 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (11.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1831)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3675)
+Completed 200 OK in 22ms (Views: 9.3ms | ActiveRecord: 11.8ms | Allocations: 3991)
+
+
+Started GET "/spendings/new" for 127.0.0.1 at 2023-06-14 11:15:11 +0700
+Processing by SpendingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/new.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 3.4ms | Allocations: 989)
+  Rendered spendings/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1238)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2894)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 3269)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:15:13 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (1.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 1831)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 3680)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 1.8ms | Allocations: 3997)
+
+
+Started GET "/spendings/1" for 127.0.0.1 at 2023-06-14 11:15:14 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (0.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 581)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2229)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.8ms | Allocations: 3006)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:15:16 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.4ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 3.9ms | Allocations: 1063)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1184)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2832)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 1.4ms | Allocations: 3609)
+
+
+Started GET "/spendings/1/edit" for 127.0.0.1 at 2023-06-14 11:16:09 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSpending Load (1.0ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.5ms | Allocations: 1490)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1914)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3868)
+Completed 200 OK in 48ms (Views: 16.8ms | ActiveRecord: 1.0ms | Allocations: 5424)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:16:11 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (0.9ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2143)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4005)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.9ms | Allocations: 4403)
+
+
+Started GET "/spendings/new" for 127.0.0.1 at 2023-06-14 11:16:12 +0700
+Processing by SpendingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/new.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 2.0ms | Allocations: 993)
+  Rendered spendings/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2898)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started GET "/spendings/new" for 127.0.0.1 at 2023-06-14 11:16:55 +0700
+Processing by SpendingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/new.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 2.9ms | Allocations: 1410)
+  Rendered spendings/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1784)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3746)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4841)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:16:56 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (1.9ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2146)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3998)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 1.9ms | Allocations: 4396)
+
+
+Started GET "/spendings/45" for 127.0.0.1 at 2023-06-14 11:17:06 +0700
+Processing by SpendingsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mSpending Load (11.8ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/show.html.erb within layouts/application
+  Rendered spendings/_spending.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered spendings/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1148)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2796)
+Completed 200 OK in 24ms (Views: 7.1ms | ActiveRecord: 11.8ms | Allocations: 3654)
+
+
+Started GET "/spendings/45/edit" for 127.0.0.1 at 2023-06-14 11:17:08 +0700
+Processing by SpendingsController#edit as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mSpending Load (1.3ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings` WHERE `spendings`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/spendings_controller.rb:63:in `set_spending'
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/edit.html.erb within layouts/application
+  Rendered spendings/_form.html.erb (Duration: 4.0ms | Allocations: 1055)
+  Rendered spendings/edit.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1389)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3037)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.3ms | Allocations: 3870)
+
+
+Started GET "/spendings" for 127.0.0.1 at 2023-06-14 11:17:11 +0700
+Processing by SpendingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering spendings/index.html.erb within layouts/application
+  [1m[36mSpending Load (1.1ms)[0m  [1m[34mSELECT `spendings`.* FROM `spendings`[0m
+  ↳ app/views/spendings/index.html.erb:20
+  Rendered spendings/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1831)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3691)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 1.1ms | Allocations: 4007)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 11:17:18 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (3.7ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 61.9ms | Allocations: 14265)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 16178)
+Completed 200 OK in 73ms (Views: 28.9ms | ActiveRecord: 40.2ms | Allocations: 17456)
+
+
+Started GET "/departements/1" for 127.0.0.1 at 2023-06-14 11:17:19 +0700
+Processing by DepartementsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.6ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/show.html.erb within layouts/application
+  Rendered departements/_departement.html.erb (Duration: 1.1ms | Allocations: 177)
+  Rendered departements/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1164)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2812)
+Completed 200 OK in 18ms (Views: 10.6ms | ActiveRecord: 0.6ms | Allocations: 4274)
+
+
+Started GET "/departements/1/edit" for 127.0.0.1 at 2023-06-14 11:17:20 +0700
+Processing by DepartementsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartement Load (0.5ms)[0m  [1m[34mSELECT `departements`.* FROM `departements` WHERE `departements`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departements_controller.rb:63:in `set_departement'
+  Rendering layout layouts/application.html.erb
+  Rendering departements/edit.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 6.7ms | Allocations: 1288)
+  Rendered departements/edit.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1677)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3325)
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 4157)
+
+
+Started GET "/departements" for 127.0.0.1 at 2023-06-14 11:17:22 +0700
+Processing by DepartementsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/index.html.erb within layouts/application
+  [1m[36mDepartement Load (1.4ms)[0m  [1m[34mSELECT `departements`.* FROM `departements`[0m
+  ↳ app/views/departements/index.html.erb:13
+  Rendered departements/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2605)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.4ms | Allocations: 2921)
+
+
+Started GET "/departements/new" for 127.0.0.1 at 2023-06-14 11:17:22 +0700
+Processing by DepartementsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering departements/new.html.erb within layouts/application
+  Rendered departements/_form.html.erb (Duration: 2.4ms | Allocations: 765)
+  Rendered departements/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2698)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 3080)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 11:17:30 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 43.1ms | Allocations: 14810)
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 16730)
+Completed 200 OK in 50ms (Views: 18.7ms | ActiveRecord: 27.9ms | Allocations: 18008)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2023-06-14 11:17:32 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (11.9ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/_employee.html.erb (Duration: 1.0ms | Allocations: 209)
+  Rendered employees/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1187)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2835)
+Completed 200 OK in 28ms (Views: 10.9ms | ActiveRecord: 11.9ms | Allocations: 4298)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2023-06-14 11:17:33 +0700
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/employees_controller.rb:63:in `set_employee'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 5.8ms | Allocations: 1551)
+  Rendered employees/edit.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1946)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3594)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 0.9ms | Allocations: 4427)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 11:17:34 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2926)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.0ms | Allocations: 3242)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-06-14 11:17:35 +0700
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (Duration: 1.8ms | Allocations: 986)
+  Rendered employees/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1272)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2928)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-06-14 11:17:36 +0700
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT `employees`.* FROM `employees`[0m
+  ↳ app/views/employees/index.html.erb:17
+  Rendered employees/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 2924)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 3240)
+
+

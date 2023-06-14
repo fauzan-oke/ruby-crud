@@ -1,0 +1,30 @@
+
+
+
+<div class="container">
+
+
+<h2>Detail</h2>
+  <p><%= link_to "Back to employees", employees_path %></p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= render @employee %>
+        </td>
+        <td>
+        <%= link_to "Edit this employee", edit_employee_path(@employee) %>  |
+        <div class="destroy-button">
+        <%= button_to "Destroy this employee", @employee, method: :delete %>
+      </div>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+
+  </div>

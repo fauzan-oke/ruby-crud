@@ -1,0 +1,26 @@
+<div class="container">
+
+
+<h2>Detail</h2>
+  <p><%= link_to "Back to departements", departements_path, class: "departement-link" %></p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= render @departement %></td>
+        <td>
+        <%= link_to "Edit this departement", edit_departement_path(@departement), class: "departement-link" %> |
+        <div class="destroy-button">
+        <%= button_to "Destroy this departement", @departement, method: :delete %>
+      </div>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+
+  </div>

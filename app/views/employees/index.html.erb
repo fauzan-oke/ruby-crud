@@ -1,0 +1,28 @@
+
+
+
+
+<div class="container">
+<h1>Employees</h1>
+  <p><%= link_to "New employee", new_employee_path %></p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>DepartementID</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.name %></td>
+        <td><%= employee.departementID %></td>
+        <td>
+        <%= link_to "Show this employee", employee %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</div>
